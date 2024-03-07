@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="../src/css/shop.css">
+    <link  rel="stylesheet"  href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+   
+    <script type="text/javascript">
+        function dataBase(obj){
+            document.querySelector("p").innerHTML.style="none";
+            switch(obj){
+                case "into":
+                    document.querySelector("p").innerHTML=`Hello, everyone!<br>
+My name is Kartan Shiva Shanker. I believe that each person has a unique story waiting to be told, and I'd like to share a bit of mine with you.
+I was born and raised in Nizamabad dict Armoor, Armoor is a town in nizamabad district, in the state of Telangana in India.Armoor is situated on NH 7 and NH 63. In earlier days, 
+it is called as <a target="_blank" href=https://en.wikipedia.org/wiki/Armoor>Nvanathapuram</a> has nine mountains around the city armoor .`;
+                    break;
+                case "edu":
+                    document.querySelector("p").innerHTML=`
+                    <span style="color:white;text-decoration:underline;text-decoration-color:black;">EDUCATION :-</span>
+                    <table border=1 bgcolor="white" >
+                        <thead>
+                            <tr>
+                                <th>Cource/Certificaton</th>
+                                <th>College/Institution</th>
+                                <th>Board/University</th>
+                                <th>Percentage</th></tr>
+                            </thead>
+                        <tbody> 
+                            <tr>
+                            <td>B.TECH(CSE-DS)</td>
+                            <td>CMR Institute of Teconology</td>
+                            <td>JNTUH</td>
+                            <td>7.8%</td>
+                            </tr>
+                            <tr>
+                                <td>INTERMEDIATE</td>
+                                <td>Sri Chaitanya Junior Kalashala</td>
+                                <td>IPE</td>
+                                <td>8.90%</td>
+                                </tr>
+                            <tr>
+                                <td>HIGH SCHOOL</td>
+                                <td>Pragna High School</td>
+                                <td>SSC</td>
+                                <td>7.8%</td>
+                                </tr>
+                                </tbody>
+                            </table>`
+                    break;
+                case "s&w":
+                    document.querySelector("p").innerHTML=`<div style="display:flex;">
+                        
+                        <fieldset>
+                        <legend style="color:white;">MY_STRENGTH's</legend>
+                        <ul>
+                            <li>honest</li>
+                            <li>Positive</li>
+                            <li>Leadership skills</li>
+                            <li>Creative</li>
+                            <li>Passionate</li></ul></fieldset>
+                        
+                            <fieldset >
+                            <legend style="color:white;">MY_WEEKNESSES</legend>
+                        <ul>
+                            <li>Difficulty asking for help</li>
+                            <li>Lacking confidence at times</li>
+                            <li>Short tempar</li>
+                         </ul>
+                         </fieldset>
+                           
+                            </div>`;
+                    break;
+                case "gole":
+                    document.querySelector("p").innerHTML=`
+                    <span style="color:white;text-decoration:underline;text-decoration-color:black;">GOAL :-</span><br>
+My primary goal is to become a UI developer, while my long-term objective is to serve the community by delivering high-quality education.`.fontsize(5);
+                    break;
+                case "knowledges":
+                    document.querySelector("p").innerHTML=`
+                    <span style="color:white;text-decoration:underline;text-decoration-color:black;">SKILL'S:-</span><br>
+                    I have knowledge on HTML, CSS, JavaScript, jQuery, and MongoDB.`.fontsize(5);
+                    break;
+                case "hobbies":
+                    document.querySelector("p").innerHTML=`<dl>
+                        <dt style="text-decoration: underline; color:white;">Hobbies:-</dt>
+                        <dd>singing</dd>
+                        <dd>dancing</dd>
+                        <dd> playing cricket</dd>
+                        </dl>`.fontsize(5);
+                    break;
+                default:
+                    document.querySelector("p").innerHTML=`
+                    <span style="color:white;text-decoration:underline;text-decoration-color:black;">${"Achievements".toUpperCase()}:-</span><br>
+                    <ul>
+                    <li>I have achived "A" certificate in <a href=https://en.wikipedia.org/wiki/Scouting_and_Guiding_in_India target="_blank">hindustan Scouts and guides</a></li>
+                    <li>I'm Certified from Naresh It on "UI devoloper"</li> </ul>`.fontsize(5);
+                
+                    break;
+
+            }
+        
+
+        }
+
+
+    </script>
+
+</head>
+<body class="container-fluid" background="../public/images/background.jpeg">
+    <section class="background">
+        <div class="discription">
+            <div class="divide">
+         <img class="img "  src="public/images/mys.png" height="300px" width="300px">
+         <p id="para" style="font-size: 20px;" align="justify-content">
+            <span id="txt">click the following button's to know my information:-</span>
+         </p>
+        </div>
+         <div class="info">
+            <button id="into" onclick="dataBase(this.id)" class="btn btn-outline-danger">basic_Information</button>
+            <button id="edu" onclick="dataBase(this.id)" class="btn">Education</button>
+            <button id="s&w" onclick="dataBase(this.id)" class="btn">strength&Weeknesses</button>
+            <button id="gole" onclick="dataBase(this.id)" class="btn">Goal</button>
+            <button id="knowledges" onclick="dataBase(this.id)" class="btn">Skills</button>
+            <button id="hobbies" onclick="dataBase(this.id)" class="btn">hobbies</button>
+            <button id="Achievements" onclick="dataBase(this.id)" class="btn">Achievements</button>
+         </div>
+        
+        </div>
+    </section>
+    <footer class="row">
+        <div >
+            <dl style="padding-left: 20px;">
+                <dt><span class=" bi bi-globe" style="font-size: 18px; "></span>CONNECT ME</dt>
+                <dd> <span>gmail:-</span><a href="mailto:kartanshiva2003@gmail.com" vlink="white">kartanshiva2003@gmail.com</a></dd>
+                <dd><span>phone Number:-</span><a href="tel:+918978111303">8978111303</a></dd>
+            </dl>
+        </div>
+    </footer>
+    
+</body>
+</html> 
